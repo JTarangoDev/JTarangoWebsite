@@ -8,7 +8,7 @@ export const ContactSection = () => {
     
   return (
 
-    <div className='contact'>
+    <div className='contact' id='contact'>
         <div className='section-title'>
             <h2>Let's get in touch!</h2>
 
@@ -18,18 +18,18 @@ export const ContactSection = () => {
 
         <form onSubmit={handleSubmit} className='contact-form'>
             <div className='form-row'>
-                <input id="name" type="name" name="name" placeholder='Name' required autocomplete="on"/>
+                <input id="name" type="name" name="name" placeholder='Name' required autoComplete="on"/>
                 <ValidationError prefix="Name" field="name" errors={state.errors}/>
 
-                <input id="email" type="email" name="email" placeholder='Email' required autocomplete="on"/>
+                <input id="email" type="email" name="email" placeholder='Email' required autoComplete="on"/>
                 <ValidationError prefix="Email" field="email" errors={state.errors}/>
             </div>
 
             <div className='form-row-2'>
-                <input id="subject" type="text" name="subject" placeholder='Subject' required autocomplete="on"/>
+                <input id="subject" type="text" name="subject" placeholder='Subject' required autoComplete="on"/>
                 <ValidationError prefix="Subject" field="subject" errors={state.errors}/>
 
-                <textarea id="message" name="message" placeholder='Message' required autocomplete="on"/>
+                <textarea id="message" name="message" placeholder='Message' required autoComplete="on"/>
                 <ValidationError prefix="Message" field="message" errors={state.errors}/>
             </div>
 

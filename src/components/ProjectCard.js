@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import { project } from '../data/projects-data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faAngleDown, faDisplay} from '@fortawesome/free-solid-svg-icons'
@@ -13,7 +13,7 @@ export const ProjectCard = () => {
     const [curr, setCurr] = useState('')
     const [next, setNext] = useState('')
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         let current = project.findIndex((project) => project.id === index)
 
         setCurr(project[current])
@@ -103,7 +103,7 @@ export const ProjectCard = () => {
                                     <div className='title'>
                                         <h3>{prev.name}</h3>
                                         <div className='links'>
-                                            <div className='tooltip-wraper'>
+                                            <div className={prev.view ? 'tooltip-wraper' : 'tooltip-hidden' }>
                                                 <a href={prev.url} target='_blank' rel='noreferrer' tooltip="Live View" ><FontAwesomeIcon icon={faDisplay} /></a>
                                             </div>
                                             
@@ -134,7 +134,7 @@ export const ProjectCard = () => {
                                     <div className='title'>
                                         <h3>{curr.name}</h3>
                                         <div className='links'>
-                                            <div className='tooltip-wraper'>
+                                            <div className={curr.view ? 'tooltip-wraper' : 'tooltip-hidden' }>
                                                 <a href={curr.url} target='_blank' rel='noreferrer' tooltip="Live View" ><FontAwesomeIcon icon={faDisplay} /></a>
                                             </div>
                                             
@@ -165,7 +165,7 @@ export const ProjectCard = () => {
                                     <div className='title'>
                                         <h3>{next.name}</h3>
                                         <div className='links'>
-                                            <div className='tooltip-wraper'>
+                                            <div className={next.view ? 'tooltip-wraper' : 'tooltip-hidden' }>
                                                 <a href={next.url} target='_blank' rel='noreferrer' tooltip="Live View" ><FontAwesomeIcon icon={faDisplay} /></a>
                                             </div>
                                             

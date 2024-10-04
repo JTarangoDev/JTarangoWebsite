@@ -14,6 +14,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #1c1c1c;
 }
 
 code {
@@ -150,6 +151,11 @@ code {
   color: #fde4c3;
   will-change: transform;
   animation: nav-animation 2s;
+}
+
+.header li a{
+  text-decoration: none;
+  color: #fde4c3;
 }
 
 @keyframes nav-animation {
@@ -302,6 +308,12 @@ code {
   color: #fde4c3;
 }
 
+.mobile-nav li a{
+  text-decoration: none;
+  color: #fde4c3;
+}
+
+
 .mobile-nav .show-nav-links .home{
   animation: nav-animation-mobile .6s ease;
 }
@@ -393,6 +405,48 @@ code {
   .mobile-nav{
     display: none;
   }
+}
+
+/*---------------------------------------------Footer-------------------------------------------------*/
+.footer{
+  background: #1c1c1c;
+  color: #fde4c3;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 115px;
+}
+
+.footer .footer-wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer .footer-wrap .footer-copyrigth{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2vmin;
+}
+
+.footer .footer-wrap .footer-icons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-wrap .footer-icons a{
+  margin: 0 1rem;
+  font-size: 3.2vmin;
+  transition: color .2s;
+  color: #fde4c3;
+}
+
+
+.footer .footer-wrap .footer-icons a:hover{
+  color: #928370;
 }
 
 /*--------------------------------------------Content-------------------------------------------------*/
@@ -765,7 +819,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .6s;
+  transition: all .6s !important;
 }
 
 
@@ -837,6 +891,10 @@ code {
 
 .tooltip-wraper a i{
   aspect-ratio: 1/1;
+}
+
+.tooltip-hidden{
+  display: none;
 }
 
 .project-card .card .card-text .info .title .links a::after{
@@ -1159,7 +1217,7 @@ select:-webkit-autofill:focus {
   align-self: flex-end;
   letter-spacing: 2px;
   will-change: transform;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .contact .contact-form button i{
@@ -1169,6 +1227,51 @@ select:-webkit-autofill:focus {
 }
 
 .contact .contact-form button:hover{
+  transform: translateX(10px);
+}
 
-  transform: scale(1.1);
+/*---------------------------------------AboutPage-----------------------------------------*/
+.about-page{
+  color: #fde4c3;
+  width: 70%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 6rem 0 2rem;
+  font-size: 3vmin;
+  animation: in-anim 1s;
+}
+
+@keyframes in-anim {
+  from{
+    opacity: 0%;
+    translate: -50px 0px;
+  }
+  to{
+    opacity: 100%;
+    translate: 0px 0px;
+  }
+}
+
+.about-page .image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7vmin 0;
+}
+
+.about-page .image img{
+  border-radius: 50%;
+  height: 15vmin;
+  padding: 20px;
+}
+
+
+.about-page .text strong{
+  position: relative;
+  color: #ac5d65;
+  background: transparent;
+  overflow: hidden;
+  font-style: italic;
 }

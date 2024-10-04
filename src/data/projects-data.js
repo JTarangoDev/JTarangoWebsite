@@ -7,6 +7,7 @@ export const project = [
         'git': 'https://github.com/JTarangoDev/webIHC',
         'smallDesc': 'Esta es una descripcion de ejemplo del proyecto dsadfasdfadf asdf asdfasdfdfadsfassdfa sdfasd f asdf adfsa sdfa sd ',
         'longDesc': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facilis ipsam corporis eum ducimus, laboriosam quasi! Provident doloremque itaque et nostrum aspernatur tenetur, ea perferendis! Eveniet ullam temporibus quae sed.',
+        'view': true,
         'tech':['html ', 'css ', 'bootstrap ', 'js ']
     },
 
@@ -17,6 +18,7 @@ export const project = [
         'url': 'https://web-ihxc.vercel.app/',
         'smallDesc': 'Esta es una descripcion de ejemplo del proyecto',
         'longDesc': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facilis ipsam corporis eum ducimus, laboriosam quasi! Provident doloremque itaque et nostrum aspernatur tenetur, ea perferendis! Eveniet ullam temporibus quae sed.',
+        'view': true,
         'tech':['html ', 'css  ', 'bootstrap ', 'js ', 'react ', 'java ', 'MySql ']
     },
 
@@ -27,6 +29,7 @@ export const project = [
         'url': 'https://web-ihxc.vercel.app/',
         'smallDesc': 'Esta es una descripcion de ejemplo del proyecto',
         'longDesc': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facilis ipsam corporis eum ducimus, laboriosam quasi! Provident doloremque itaque et nostrum aspernatur tenetur, ea perferendis! Eveniet ullam temporibus quae sed.',
+        'view': false,
         'tech':['html ', 'css ', 'bootstrap ', 'js ', 'java ', 'MySql ']
     }
 ]

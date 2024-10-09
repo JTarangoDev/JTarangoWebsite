@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react'
-import { project } from '../data/projects-data'
+import { projects } from '../data/projects-data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faAngleDown, faDisplay} from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -14,20 +14,20 @@ export const ProjectCard = () => {
     const [next, setNext] = useState('')
 
     useLayoutEffect(() => {
-        let current = project.findIndex((project) => project.id === index)
+        let current = projects.findIndex((project) => project.id === index)
 
-        setCurr(project[current])
+        setCurr(projects[current])
 
         if(index <= 1){
-            setPrev(project[current + 2])
+            setPrev(projects[current + 2])
         }else{
-            setPrev(project[current - 1])
+            setPrev(projects[current - 1])
         }
 
         if(index >= limit){
-            setNext(project[current - 2])
+            setNext(projects[current - 2])
         }else{
-            setNext(project[current +1])
+            setNext(projects[current +1])
         } 
 
     }, [index])

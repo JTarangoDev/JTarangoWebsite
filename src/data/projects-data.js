@@ -1,35 +1,61 @@
 export const projects = [
+
     {
         'id': 1,
-        'name': 'IHC Website',
-        'imgSource': '/images/webihc.png',
-        'url': 'https://web-ihxc.vercel.app/',
-        'git': 'https://github.com/JTarangoDev/webIHC',
-        'smallDesc': 'Esta es una descripcion de ejemplo del proyecto dsadfasdfadf asdf asdfasdfdfadsfassdfa sdfasd f asdf adfsa sdfa sd ',
-        'longDesc': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facilis ipsam corporis eum ducimus, laboriosam quasi! Provident doloremque itaque et nostrum aspernatur tenetur, ea perferendis! Eveniet ullam temporibus quae sed.',
+        'name': 'Pacto Vivo Website',
+        'imgSource': '/images/pv.png',
+        'url': 'https://pactovivo.com/',
+        'git': 'https://github.com/JTarangoDev/Pacto-Vivo-Website',
+        'smallDesc': 'This project is a website developed for the local church Pacto Vivo. Created with React, the site focuses on offering an attractive and functional design, with the vision of potentially expanding into a more robust platform in the future.',
+        'longDesc': 'This project is a website developed for the local church Pacto Vivo. Created with React, the site focuses on offering an attractive and functional design, with the vision of potentially expanding into a more robust platform in the future.',
         'view': true,
-        'tech':['html', 'css', 'bootstrap', 'js']
+        'tech':['JavaScript','React', 'HTML', 'CSS']
     },
 
     {
         'id': 2,
-        'name': 'ejemplo1',
-        'imgSource': '/images/ejemplo1.png',
-        'url': 'https://web-ihxc.vercel.app/',
-        'smallDesc': 'Esta es una descripcion de ejemplo del proyecto',
-        'longDesc': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facilis ipsam corporis eum ducimus, laboriosam quasi! Provident doloremque itaque et nostrum aspernatur tenetur, ea perferendis! Eveniet ullam temporibus quae sed.',
-        'view': true,
-        'tech':['html', 'css ', 'bootstrap', 'js', 'react', 'java', 'MySql']
+        'name': 'Employees managment system',
+        'imgSource': '/images/ems.png',
+        'git': 'https://github.com/JTarangoDev/Employee-System-backend',
+        'smallDesc': 'This project is a comprehensive Employee Management System that combines a Spring Boot backend with a React frontend.',
+        'longDesc': 'This project is a comprehensive Employee Management System that combines a Spring Boot backend with a React frontend. It demonstrates the integration of a RESTful API. The system allows for complete CRUD (Create, Read, Update, Delete) operations on employee records, showcasing a full-stack application architecture.',
+        'view': false,
+        'tech':['JavaScript', 'React.js', 'Java', 'Spring Boot', 'MySql', 'Bootstrap', 'Hibernate']
     },
 
     {
         'id': 3,
-        'name': 'ejemplo2',
-        'imgSource': '/images/ejemplo2.png',
-        'url': 'https://web-ihxc.vercel.app/',
-        'smallDesc': 'Esta es una descripcion de ejemplo del proyecto',
-        'longDesc': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facilis ipsam corporis eum ducimus, laboriosam quasi! Provident doloremque itaque et nostrum aspernatur tenetur, ea perferendis! Eveniet ullam temporibus quae sed.',
+        'name': 'Task manager',
+        'imgSource': '/images/task.png',
+        'git': 'https://github.com/JTarangoDev/Java-Task-Manager',
+        'smallDesc': 'This Task Management System is a web application developed as part of a technical test for a Java Developer position. It allows users to list, create, and delete tasks, providing a simple and functional interface for activity management.',
+        'longDesc': 'This Task Management System is a web application developed as part of a technical test for a Java Developer position. It allows users to list, create, and delete tasks, providing a simple and functional interface for activity management.',
         'view': false,
-        'tech':['html', 'css', 'bootstrap', 'js', 'java', 'MySql']
-    }
+        'tech':['Java','Thymeleaf', 'MySQL', 'Mybatis', 'bootstrap']
+    },
+
+    {
+        'id': 4,
+        'name': 'IHC Website',
+        'imgSource': '/images/ihc.png',
+        'url': 'https://grupoihc.com.mx/',
+        'git': 'https://github.com/JTarangoDev/webIHC',
+        'smallDesc': 'Corporate website development for a leading construction systems company with modern and responsive design that showcases their product catalog and services.',
+        'longDesc': "Complete design and development of a corporate website for a company specialized in the manufacturing and distribution of construction systems. The project focused on creating a professional digital presence that reflects the company's solid reputation and market experience.",
+        'view': true,
+        'tech':['HTML', 'CSS', 'JavaScript', 'Bootstrap' ]
+    },
+
+    {
+        'id': 5,
+        'name': 'SIIA Website',
+        'imgSource': '/images/siia.png',
+        'url': 'https://siiaconsultores.com/',
+        'git': 'https://github.com/JTarangoDev/siia-web',
+        'smallDesc': 'Professional website development for an environmental consulting firm serving government and private sectors. Elegant design effectively communicating their expertise in environmental consulting, water analysis, and hydraulics. ',
+        'longDesc': 'Design and development of a corporate website for a consulting firm specialized in environmental and hydraulic services. The project focused on creating a digital platform that conveys professionalism and environmental commitment, highlighting their comprehensive range of specialized services.',
+        'view': true,
+        'tech':['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+    },
+
 ]

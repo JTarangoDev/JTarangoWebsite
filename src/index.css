@@ -1385,6 +1385,7 @@ select:-webkit-autofill:focus {
 .projects-page .projects-list .fullview img{
   height: clamp(10rem, -2.308rem + 19.231vi, 15rem);
   margin: 15px;
+  aspect-ratio: 2/1;
 }
 
 .projects-page .projects-list .fullview p{

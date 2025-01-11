@@ -2,6 +2,26 @@ export const projects = [
 
     {
         'id': 1,
+        'name': 'Admin Pannel',
+        'imgSource': '/images/adminp.png',
+        'git': 'https://github.com/JTarangoDev/Admin-Pannel',
+        'smallDesc': 'Full-Stack web application that allows managing customer records through an interactive table supporting all CRUD operations. It also implements user authentication and login management.',
+        'longDesc': 'Full-Stack web application that allows managing customer records through an interactive table supporting all CRUD operations (Create, Read, Update, Delete). It also implements user authentication and login management to ensure that only authorized users can access the system.',
+        'view': false,
+        'tech':['Java', 'JavaScript', 'Spring Boot', 'MySQL', 'JPA', 'JWT']
+    },
+    {
+        'id': 2,
+        'name': 'Web Scraper and Search engine',
+        'imgSource': '/images/scraper.png',
+        'git': 'https://github.com/JTarangoDev/web-scraper-search-engine',
+        'smallDesc': 'Web Scraper and Search Engine that indexes web pages with relevant information into a MySQL database. The frontend is a search engine, visually resembling Google, allowing users to search for previously indexed web pages.',
+        'longDesc': 'Web Scraper and Search Engine that indexes web pages with relevant information into a MySQL database. It features web spider functionality to recursively index linked pages from the original site. The frontend is a search engine, visually resembling Google, allowing users to search for previously indexed web pages.',
+        'view': false,
+        'tech':['Java','JavaScript', 'Spring Boot', 'MySql', 'Hibernate','CSS']
+    },
+    {
+        'id': 3,
         'name': 'Pacto Vivo Website',
         'imgSource': '/images/pv.png',
         'url': 'https://pactovivo.com/',
@@ -13,18 +33,7 @@ export const projects = [
     },
 
     {
-        'id': 2,
-        'name': 'Employees managment system',
-        'imgSource': '/images/ems.png',
-        'git': 'https://github.com/JTarangoDev/Employee-System-backend',
-        'smallDesc': 'This project is a comprehensive Employee Management System that combines a Spring Boot backend with a React frontend.',
-        'longDesc': 'This project is a comprehensive Employee Management System that combines a Spring Boot backend with a React frontend. It demonstrates the integration of a RESTful API. The system allows for complete CRUD (Create, Read, Update, Delete) operations on employee records, showcasing a full-stack application architecture.',
-        'view': false,
-        'tech':['JavaScript', 'React.js', 'Java', 'Spring Boot', 'MySql', 'Bootstrap', 'Hibernate']
-    },
-
-    {
-        'id': 3,
+        'id': 4,
         'name': 'Task manager',
         'imgSource': '/images/task.png',
         'git': 'https://github.com/JTarangoDev/Java-Task-Manager',
@@ -35,7 +44,18 @@ export const projects = [
     },
 
     {
-        'id': 4,
+        'id': 5,
+        'name': 'Employees managment system',
+        'imgSource': '/images/ems.png',
+        'git': 'https://github.com/JTarangoDev/Employee-System-backend',
+        'smallDesc': 'This project is a comprehensive Employee Management System that combines a Spring Boot backend with a React frontend.',
+        'longDesc': 'This project is a comprehensive Employee Management System that combines a Spring Boot backend with a React frontend. It demonstrates the integration of a RESTful API. The system allows for complete CRUD (Create, Read, Update, Delete) operations on employee records, showcasing a full-stack application architecture.',
+        'view': false,
+        'tech':['JavaScript', 'React.js', 'Java', 'Spring Boot', 'MySql', 'Bootstrap', 'Hibernate']
+    },
+
+    {
+        'id': 6,
         'name': 'IHC Website',
         'imgSource': '/images/ihc.png',
         'url': 'https://grupoihc.com.mx/',
@@ -47,7 +67,7 @@ export const projects = [
     },
 
     {
-        'id': 5,
+        'id': 7,
         'name': 'SIIA Website',
         'imgSource': '/images/siia.png',
         'url': 'https://siiaconsultores.com/',

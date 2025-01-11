@@ -912,14 +912,14 @@ code {
 
 .project-card .card .card-text p{
   margin: 0;
-  font-size: 17px;
+  font-size: clamp(0.688rem, 0.479rem + 0.326vi, 1rem);
 }
 
 .project-card .card .card-text .tags{
   display: flex;
   flex-wrap: wrap;
   margin: 0 15px;
-  font-size: 15px;
+  font-size: clamp(0.5rem, 0.208rem + 0.456vi, 0.938rem);
 }
 
 .project-card .card .card-text span{
@@ -1029,15 +1029,6 @@ code {
   pointer-events: none;
 }
 
-@media (max-width: 1366px) {
-  .project-card .card .card-text p{
-    font-size: 15px;
-  }
-  
-  .project-card .card .card-text .tags{
-    font-size: 1vmax;
-  }
-}
 
 @media (max-width: 1024px) {
   .buttons .arrow-btn-prev,
@@ -1068,6 +1059,14 @@ code {
     font-size: 4.3vmin;
   }
 
+  .project-card .card .card-text p{
+    font-size: clamp(0.625rem, 0.392rem + 0.995vi, 0.75rem);
+  }
+
+  .project-card .card .card-text .tags{
+    font-size: clamp(0.313rem, -0.037rem + 1.493vi, 0.5rem);
+  }
+
   .project-card .card .card-text .info .title .links a{
     font-size: 3.5vmin;
   }
@@ -1084,13 +1083,6 @@ code {
     display: none;
   }
   
-}
-
-@media (max-width: 430px) {
-  .project-card .card .card-text p{
-    font-size: 3vmin;
-  }
-
 }
 
 /*---------------------------------------ContactSection-----------------------------------------*/
